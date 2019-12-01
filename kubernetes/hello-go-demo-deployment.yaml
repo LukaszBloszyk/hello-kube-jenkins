@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-kube-jenkins-deploy
+  labels:
+    app: hello-kube-jenkins
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-kube-jenkins
+  template:
+    metadata:
+      labels:
+        app: hello-kube-jenkins
+    spec:
+      containers:
+      - name: hello-go-demo
+        image: lukaszbloszyk/hello-go-demo
+        ports:
+        - containerPort: 8080
+        

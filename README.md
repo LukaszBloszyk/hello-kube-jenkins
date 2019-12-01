@@ -1,2 +1,2 @@
 # hello-kube-jenkins
-Jenkins on top of Kubernetes demonstration purpose repo with golang app
+Simple demo of scalable Jenkins on top on Kubernetes with demonstration Goalng App deployed also on Kubernetes and build via Jenkins. 
