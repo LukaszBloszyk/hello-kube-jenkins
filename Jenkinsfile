@@ -20,7 +20,6 @@ pipeline {
         sh '''curl -ik \\
      -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceaccount/token)" \\
      https://kubernetes.default.svc.cluster.local/api/v1/namespaces/default/pods'''
-        sh 'kubectl get svc'
       }
     }
 
